@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reports email="aliks-os@ukr.net" programmer="Aleksey Osipov" lib="QtRPT">
+  <Report pageNo="1" marginsTop="0" marginsBottom="0" marginsLeft="0" borderStyle="solid" pageHeight="92" borderColor="" pageWidth="160" marginsRight="0" orientation="0" border="0" borderWidth="1">
+    <ReportBand type="MasterHeader" name="MasterHeaderBand" showInGroup="0" width="160" height="93">
+      <TContainerField fontItalic="0" aligmentV="vCenter" value="[code]" borderBottom="rgba(0,0,0,255)" borderColor="rgba(0,0,0,255)" left="10" fontColor="rgba(0,0,0,255)" barcodeFrameType="0" backgroundColor="rgba(255,255,255,255)" fontFamily="MS Shell Dlg 2" borderStyle="solid" barcodeHeight="50" printing="1" barcodeType="60" fontStrikeout="0" width="138" height="39" fontUnderline="0" fontSize="8" borderTop="rgba(0,0,0,255)" type="barcode" ZValue="11" groupName="" borderWidth="1px" top="4" borderRight="rgba(0,0,0,255)" name="barcode1" aligmentH="hLeft" autoHeight="0" fontBold="0" borderLeft="rgba(0,0,0,255)"/>
+      <TContainerField fontItalic="0" aligmentV="vCenter" value="[code]" borderBottom="rgba(0,0,0,255)" borderColor="rgba(0,0,0,255)" left="11" fontColor="rgba(0,0,0,255)" barcodeFrameType="0" backgroundColor="rgba(255,255,255,255)" fontFamily="MS Shell Dlg 2" borderStyle="solid" barcodeHeight="50" printing="1" barcodeType="60" fontStrikeout="0" width="138" height="39" fontUnderline="0" fontSize="8" borderTop="rgba(0,0,0,255)" type="barcode" ZValue="11" groupName="" borderWidth="1px" top="49" borderRight="rgba(0,0,0,255)" name="barcode2" aligmentH="hLeft" autoHeight="0" fontBold="0" borderLeft="rgba(0,0,0,255)"/>
+    </ReportBand>
+  </Report>
+</Reports>

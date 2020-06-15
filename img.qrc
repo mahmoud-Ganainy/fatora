@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>Img/temp-icon.png</file>
+        <file>Img/temp-folder1-e1398695823800.png</file>
+        <file>Img/new-icon1.png</file>
+        <file>Img/back.png</file>
+        <file>Img/cancel.png</file>
+        <file>Img/next.png</file>
+        <file>Img/print.jpg</file>
+        <file>Img/save.png</file>
+        <file>Img/temp.png</file>
+        <file>Img/006074-floppy-disk-ok.png</file>
+        <file>Img/new-icon1.jpg</file>
+        <file>Img/add_blue.png</file>
+        <file>Img/Down.png</file>
+        <file>Img/Up.png</file>
+        <file>Img/Menu.png</file>
+    </qresource>
+</RCC>

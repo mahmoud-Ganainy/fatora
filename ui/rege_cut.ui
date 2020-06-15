@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>rege_cut</class>
+ <widget class="QDialog" name="rege_cut">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>932</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>7</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>20</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>رقم  كارت الصنف</string>
+   </property>
+   <property name="buddy">
+    <cstring>item_id</cstring>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>94</x>
+     <y>32</y>
+     <width>18</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-width: 2px !important;
+    border-radius: 5px !important;
+background-image: url(:/Rc/Img/Up.png);
+}    
+
+QPushButton:hover {
+background-image: url(:/Rc/Img/Up HOVER.png);
+}
+QPushButton:pressed {
+background-image: url(:/Rc/Img/Up CLICK.png);
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="item_buy">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>163</y>
+     <width>187</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>187</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cat_name">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>94</y>
+     <width>187</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+  border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;
+}
+QComboBox:editable {
+    background: white;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+	
+	background-color:transparent;
+
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::down-arrow {
+image: url(:/Rc/Img/Menu.png);
+
+}
+QComboBox QAbstractItemView {
+    border-bottom: 1px solid black;
+    border-top:none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+
+   /* selection-background-color:;*/
+}
+QComboBox::down-arrow:on {
+    
+	image: url(:/Rc/Img/Menu EXPAND.png);
+
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="supp">
+   <property name="geometry">
+    <rect>
+     <x>379</x>
+     <y>9</y>
+     <width>96</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>المورد</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="item_name">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>32</y>
+     <width>200</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_Color">
+   <property name="geometry">
+    <rect>
+     <x>241</x>
+     <y>94</y>
+     <width>187</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>187</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>220</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+  border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;
+}
+QComboBox:editable {
+    background: white;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+	
+	background-color:transparent;
+
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::down-arrow {
+image: url(:/Rc/Img/Menu.png);
+
+}
+QComboBox QAbstractItemView {
+    border-bottom: 1px solid black;
+    border-top:none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+
+   /* selection-background-color:;*/
+}
+QComboBox::down-arrow:on {
+    
+	image: url(:/Rc/Img/Menu EXPAND.png);
+
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>65</y>
+     <width>50</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>المجموعة</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="item_sell">
+   <property name="geometry">
+    <rect>
+     <x>414</x>
+     <y>163</y>
+     <width>187</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>187</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_size">
+   <property name="geometry">
+    <rect>
+     <x>447</x>
+     <y>94</y>
+     <width>187</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>187</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+  border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;
+}
+QComboBox:editable {
+    background: white;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+	
+	background-color:transparent;
+
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::down-arrow {
+image: url(:/Rc/Img/Menu.png);
+
+}
+QComboBox QAbstractItemView {
+    border-bottom: 1px solid black;
+    border-top:none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+
+   /* selection-background-color:;*/
+}
+QComboBox::down-arrow:on {
+    
+	image: url(:/Rc/Img/Menu EXPAND.png);
+
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>657</x>
+     <y>124</y>
+     <width>97</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>حد الطلب</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>273</x>
+     <y>70</y>
+     <width>150</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>190</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>لون</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>453</x>
+     <y>67</y>
+     <width>85</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>مقاس</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>94</x>
+     <y>40</y>
+     <width>18</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-width: 2px !important;
+    border-radius: 5px !important;
+background-image: url(:/Rc/Img/Down.png);
+}    
+
+QPushButton:hover {
+background-image: url(:/Rc/Img/Down HOVER.png);
+}
+QPushButton:pressed {
+background-image: url(:/Rc/Img/Down CLICK.png);
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>641</x>
+     <y>27</y>
+     <width>278</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_9">
+    <item>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #dd6767;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>مسح كرت الصنف</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #a9a9a9;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>تحديث الصنف</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="next">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #a9a9a9;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>صنف جديد</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="item_profit">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>163</y>
+     <width>187</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>187</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>5</y>
+     <width>102</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>اسم الصنف</string>
+   </property>
+   <property name="buddy">
+    <cstring>item_name</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>402</x>
+     <y>128</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>سعر البيع</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="item_id">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>31</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>248</y>
+     <width>900</width>
+     <height>390</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::ExtendedSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>202</y>
+     <width>291</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #dd6767;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>مسح صنف فرعي</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="add">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #a9a9a9;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>اضافة الصنف</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #a9a9a9;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>تحديث السعر</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="order_point">
+   <property name="geometry">
+    <rect>
+     <x>611</x>
+     <y>163</y>
+     <width>187</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>187</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>135</y>
+     <width>109</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>سعر شراء</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>203</x>
+     <y>131</y>
+     <width>93</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>نسبة الربح</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="supp_name">
+   <property name="geometry">
+    <rect>
+     <x>378</x>
+     <y>32</y>
+     <width>200</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+  border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;
+}
+QComboBox:editable {
+    background: white;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+	
+	background-color:transparent;
+
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::down-arrow {
+image: url(:/Rc/Img/Menu.png);
+
+}
+QComboBox QAbstractItemView {
+    border-bottom: 1px solid black;
+    border-top:none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+
+   /* selection-background-color:;*/
+}
+QComboBox::down-arrow:on {
+    
+	image: url(:/Rc/Img/Menu EXPAND.png);
+
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>item_buy</zorder>
+  <zorder>cat_name</zorder>
+  <zorder>supp</zorder>
+  <zorder>item_name</zorder>
+  <zorder>item_Color</zorder>
+  <zorder>label_3</zorder>
+  <zorder>item_sell</zorder>
+  <zorder>item_size</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>item_profit</zorder>
+  <zorder>name</zorder>
+  <zorder>label_6</zorder>
+  <zorder>item_id</zorder>
+  <zorder>tableView</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>order_point</zorder>
+  <zorder>label_9</zorder>
+  <zorder>label_11</zorder>
+  <zorder>supp_name</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

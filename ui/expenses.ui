@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>expenses</class>
+ <widget class="QWidget" name="expenses">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>765</width>
+    <height>401</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>607</x>
+     <y>327</y>
+     <width>118</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>اجمالي المصروفات</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="dateTimeEdit">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>24</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateTimeEdit{
+  border-style: solid !important;
+    border-width:1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;
+}
+
+QDateTimeEdit::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+QDateTimeEdit:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QDateTimeEdit::down-arrow {
+image: url(:/Rc/Img/Menu.png);
+
+}
+
+QDateTimeEdit::down-arrow:on {
+    
+	image: url(:/Rc/Img/Menu EXPAND.png);
+
+}
+
+QDateTimeEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+	
+	background-color:transparent;
+
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}</string>
+   </property>
+   <property name="displayFormat">
+    <string>M/d/yyyy h:mm:ss AP</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="next_rec">
+   <property name="geometry">
+    <rect>
+     <x>118</x>
+     <y>26</y>
+     <width>18</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>564564</width>
+     <height>564564</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-width: 2px !important;
+    border-radius: 5px !important;
+background-image: url(:/Rc/Img/Up.png);
+}    
+
+QPushButton:hover {
+background-image: url(:/Rc/Img/Up HOVER.png);
+}
+QPushButton:pressed {
+background-image: url(:/Rc/Img/Up CLICK.png);
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/Img/Up.png</normaloff>:/img/Img/Up.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_rec">
+   <property name="geometry">
+    <rect>
+     <x>118</x>
+     <y>36</y>
+     <width>18</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>123123</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-width: 2px !important;
+    border-radius: 5px !important;
+background-image: url(:/Rc/Img/Down.png);
+}    
+
+QPushButton:hover {
+background-image: url(:/Rc/Img/Down HOVER.png);
+}
+QPushButton:pressed {
+background-image: url(:/Rc/Img/Down CLICK.png);
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/img/Img/Down.png</normaloff>:/img/Img/Down.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="total_after">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>351</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;
+background-color: #292929;
+    color: #ffffff;
+    font: bold 19px;</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="rec_no">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>25</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb( 41, 41, 41 ) !important;
+    border-radius: 3px !important;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>1</y>
+     <width>202</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font: bold 12px;</string>
+   </property>
+   <property name="text">
+    <string>تاريخ</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>342</y>
+     <width>286</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QPushButton" name="saved">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #a9a9a9;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>فواتير محفوطة</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #a9a9a9;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>فاتورة جديدة</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="delete_rec">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #dd6767;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>حذف الفاتورة</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>21</y>
+     <width>182</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="out">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #d4d4d4;
+    border-style: hidden;
+	border-width: 1px;
+    border-radius: 3px;
+    font: bold 14px;
+    color: #ffffff;
+ 
+}
+
+QPushButton:checked {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>دفع</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="in">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #d4d4d4;
+    border-style: hidden;
+	border-width: 1px;
+    border-radius: 3px;
+    font: bold 14px;
+    color: #ffffff;
+ 
+}
+
+QPushButton:checked {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>ارتداد</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>318</x>
+     <y>342</y>
+     <width>233</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QPushButton" name="save">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #a9a9a9;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>حفظ</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #a9a9a9;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>حفظ و طباعة</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #a9a9a9;
+    border-style: hidden;
+	border-width:1px;
+    border-radius: 2px;
+    font: bold 14px;
+    color: #ffffff; 
+}
+QPushButton:pressed {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>طباعة</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>88</y>
+     <width>746</width>
+     <height>235</height>
+    </rect>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="cornerButtonEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>5</number>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>88</y>
+     <width>746</width>
+     <height>235</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>521</x>
+     <y>21</y>
+     <width>228</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="new_expense">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #d4d4d4;
+    border-style: hidden;
+	border-width: 1px;
+    border-radius: 3px;
+    font: bold 14px;
+    color: #ffffff;
+ 
+}
+
+QPushButton:checked {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>الصندوق</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="old_expense">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  	background-color: #d4d4d4;
+    border-style: hidden;
+	border-width: 1px;
+    border-radius: 3px;
+    font: bold 14px;
+    color: #ffffff;
+ 
+}
+
+QPushButton:checked {
+background-color: #3269e4;
+}</string>
+      </property>
+      <property name="text">
+       <string>خارج الصندوق</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>rec_no</zorder>
+  <zorder>label_23</zorder>
+  <zorder>dateTimeEdit</zorder>
+  <zorder>next_rec</zorder>
+  <zorder>back_rec</zorder>
+  <zorder>total_after</zorder>
+  <zorder>label_18</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_3</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>tableView</zorder>
+  <zorder>layoutWidget_4</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

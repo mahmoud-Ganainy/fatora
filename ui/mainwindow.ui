@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Fatora</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralWidget {
+
+background-repeat:no;
+background-position:100px;}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>3</y>
+      <width>1100</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="tabsClosable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuRegister">
+    <property name="title">
+     <string>تكويدات</string>
+    </property>
+    <addaction name="actionItems"/>
+    <addaction name="separator"/>
+    <addaction name="action_9"/>
+    <addaction name="actionCustomer"/>
+    <addaction name="actionSupplier"/>
+    <addaction name="separator"/>
+    <addaction name="actionSeason"/>
+    <addaction name="actionCategory"/>
+    <addaction name="actionClass"/>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+    <addaction name="action_7"/>
+   </widget>
+   <widget class="QMenu" name="menuSales">
+    <property name="title">
+     <string>مبيعات</string>
+    </property>
+    <addaction name="actionSales_Return"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuBuy">
+    <property name="title">
+     <string>مشتريات</string>
+    </property>
+    <addaction name="actionBuy_Return"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menusetting">
+    <property name="title">
+     <string>اعدادت</string>
+    </property>
+    <addaction name="actionsetting"/>
+    <addaction name="action_8"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>دفعات</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>مصروفات</string>
+    </property>
+    <addaction name="action_4"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>تقارير</string>
+    </property>
+    <addaction name="action_5"/>
+    <addaction name="actiontest"/>
+    <addaction name="action_6"/>
+    <addaction name="action_10"/>
+   </widget>
+   <addaction name="menuRegister"/>
+   <addaction name="menuSales"/>
+   <addaction name="menuBuy"/>
+   <addaction name="menusetting"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionCustomer">
+   <property name="text">
+    <string>تكويد العملاء</string>
+   </property>
+  </action>
+  <action name="actionSupplier">
+   <property name="text">
+    <string>تكويد الموردين</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionSize">
+   <property name="text">
+    <string>Size</string>
+   </property>
+  </action>
+  <action name="actionSeason">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>تكويد المواسم</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionSales_Return">
+   <property name="text">
+    <string>Sales/Return</string>
+   </property>
+  </action>
+  <action name="actionBuy_Return">
+   <property name="text">
+    <string>Buy/Return</string>
+   </property>
+  </action>
+  <action name="actionCategory">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>تكويد المجموعات</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionClass">
+   <property name="text">
+    <string>تكويد الاقسام</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionItems">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>تكويد الاصناف</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionsetting">
+   <property name="text">
+    <string>setting</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>دفعات عملاء/موردين</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>تكويد الخزائن</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>تكويد المخازن</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>مصرفات</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>تقرير يومي</string>
+   </property>
+  </action>
+  <action name="actiontest">
+   <property name="text">
+    <string>تقارير</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>مورد</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>تكويد الموظفين</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>ادارة الموظفين</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>قائمة الاصناف</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>عملاء</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
